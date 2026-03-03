@@ -6,7 +6,7 @@ const int ledPin = 13;
 
 unsigned long previousMillis = 0;
 int comando = -1;
-float  tempoOn = 0;
+float tempoOn = 0;
 float tempoOff = 0;
 
 void setup() {
