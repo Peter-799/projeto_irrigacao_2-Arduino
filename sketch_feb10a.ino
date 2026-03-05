@@ -35,12 +35,12 @@ void loop() {
     case 2:
       if (comando != 2) break;
       if (digitalRead(ledPin) == LOW) {
-        if (millis() - previousMillis >= tempoOff * segundo) {
+        if (millis() - previousMillis >= tempoOff * hora) {
           previousMillis = millis();
           digitalWrite(ledPin, HIGH);
         }
       } else {
-        if (millis() - previousMillis >= tempoOn * segundo) {
+        if (millis() - previousMillis >= tempoOn * minuto) {
           previousMillis = millis();
           digitalWrite(ledPin, LOW);
         }
